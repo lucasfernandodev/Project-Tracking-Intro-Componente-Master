@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Barlow&display=swap');
+
+:root{
+    /* Primary */
+    --Red: hsl(0, 100%, 68%);
+
+    /* Neutral */
+    --Very-Dark-Blue: hsl(230, 29%, 20%);
+    --Dark-Grayish-Blue: hsl(230, 11%, 40%);
+    --Grayish-Blue: hsl(231, 7%, 65%);
+    --Light-Grayish-Blue: hsl(207, 33%, 95%);
+}
+
+body{
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+
+    font-size: 18px;
+    font-family: 'Barlow', sans-serif;
+    color: var(--Very-Dark-Blue);
+    font-weight: 400;
+}
+
+button, a{
+    font-family: 'Barlow Condensed', sans-serif; 
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--Light-Grayish-Blu);
+}
+
+button{
+    background: var(--Red);
+    border: none;
+    height: 48px;
+    color: #fff;
+    min-width: 180px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+button:hover{
+    opacity: 0.8;
+}
