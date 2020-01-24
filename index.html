@@ -15,6 +15,14 @@
             <img src="assets/img/logo.svg" alt="Power" class="logo">
         </div>
 
+        <div class="menu-nav">
+            <button class="btn-nav">
+                <span class="row"></span>
+                <span class="row"></span>
+                <span class="row"></span>
+            </button>
+        </div>
+
         <nav class="navbar">
             <ul class="menu">
                 <li class="menu-item">
@@ -26,7 +34,9 @@
                 <li class="menu-item">
                     <a href="#" class="menu-link">Pricing</a>
                 </li>
+
                 <li class="menu-item">
+                    <span class="circle-row">.</span>
                     <a href="#" class="menu-link">login</a>
                 </li>
             </ul>
@@ -54,5 +64,27 @@
             <img src="assets/img/illustration-devices.svg" alt="ilustration devices" class="ilustration">
         </div>
     </main>
+
+    <script>
+    
+    const btnNav = document.querySelector('.btn-nav');
+
+    btnNav.addEventListener('click', function(e){
+        e.preventDefault();
+
+        const navbar = document.querySelector('.navbar');
+       
+
+        if(navbar.style.display === 'flex'){
+            navbar.style.display = 'none';
+        }
+        else{
+            navbar.style.display = 'flex';
+        }
+
+        btnNav.classList.toggle('btn-active');
+    })
+
+    </script>
 </body>
 </html>

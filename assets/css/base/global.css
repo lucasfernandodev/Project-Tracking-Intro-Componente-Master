@@ -47,3 +47,76 @@ button{
 button:hover{
     opacity: 0.8;
 }
+
+
+
+@media (max-width: 375px){
+    button{
+        min-width: 150px;
+        margin: 0 12px;
+        margin-left: 0;
+        font-size: 14px;
+        /* letter-spacing: 0.09rem; */
+    }
+
+    .menu-nav{
+        height: 100%;
+        width: 40px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-nav button{
+        width: 40px;
+        height: auto;
+        min-width: 0;
+        background: transparent;
+        cursor: pointer;
+        outline: none;
+        height: 50px;
+
+        position: relative;
+    }
+
+    .menu-nav button .row{
+        width: 100%;
+        background: var(--Very-Dark-Blue);
+        height: 2px;
+        margin: 5px 0;
+        display: block;
+    }
+
+    .menu-nav .btn-active .row:first-child{
+        transform: rotate(-45deg);
+        /* width: 45px; */
+    }
+
+    .menu-nav .btn-active .row:nth-child(2){
+        transform: rotate(45deg);
+        position: absolute;
+        top: 40%;
+    }
+
+    .menu-nav .btn-active .row:last-child{
+        display: none;
+        /* width: 45px; */
+    }
+}
+
+@media (min-width: 376px){
+    
+    .menu-nav{
+        display: none !important;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+    }
+}
+
+@media (min-width: 376px){
+    header .navbar{
+        display: flex !important;
+    }
+}
